@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'components/centered_placeholder.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class MainScreen extends StatelessWidget {
   final String title;
@@ -11,20 +12,36 @@ class MainScreen extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(title: Center(child: Text(title))),
         //body: CenteredPlaceholder(padding: 50));
-        body: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [placeholderRow(), placeholderRow()]));
+        body: Padding(
+          padding: const EdgeInsets.all(30),
+          child: Column(mainAxisAlignment: MainAxisAlignment.start, children: [
+            picRow(),
+            Text('George Vuxton'),
+            Text('Baller Extraordinaire'),
+            Text('Phone NUMBER HERE'),
+            linkedInEmailRow()
+          ]),
+        ));
   }
 
-  Widget paddedPlaceholder() {
-    return Padding(
-        padding: EdgeInsets.all(20),
-        child: SizedBox(child: Placeholder(), width: 100, height: 100));
+  Widget picRow() {
+    return Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+      Padding(
+          padding: EdgeInsets.all(20),
+          child: SizedBox(child: Placeholder(), width: 70, height: 70))
+    ]);
   }
 
-  Widget placeholderRow() {
-    return Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [paddedPlaceholder(), paddedPlaceholder()]);
+  Widget linkedInEmailRow() {
+    return Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+      Padding(
+        padding: EdgeInsets.all(5),
+        child: Text('LinkedIn Profile'),
+      ),
+      Padding(
+        padding: EdgeInsets.all(5),
+        child: Text('email'),
+      )
+    ]);
   }
 }
