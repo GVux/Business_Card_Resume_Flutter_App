@@ -17,8 +17,6 @@ class _PredictorState extends State<Predictor> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        //appBar: AppBar(title: Center(child: Text(title))),
-        //body: CenteredPlaceholder(padding: 50));
         body: FractionallySizedBox(
       widthFactor: 0.9,
       heightFactor: 0.9,

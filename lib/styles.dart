@@ -12,7 +12,6 @@ class Styles {
 
   static final smallText = TextStyle(
       fontFamily: _fontNameDefault,
-      //fontWeight: FontWeight.w600,
       fontSize: _textSizeSmall,
       color: _textColorBlack);
 
@@ -24,7 +23,6 @@ class Styles {
 
   static final mediumText = TextStyle(
       fontFamily: _fontNameDefault,
-      //fontWeight: FontWeight.w600,
       fontSize: _textSizeDefault,
       color: _textColorBlack);
 
@@ -36,7 +34,6 @@ class Styles {
 
   static final verySmallText = TextStyle(
       fontFamily: _fontNameDefault,
-      //fontWeight: FontWeight.bold,
       fontSize: _textSizeVerySmall,
       color: _textColorBlack);
 

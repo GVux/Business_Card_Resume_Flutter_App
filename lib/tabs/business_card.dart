@@ -3,7 +3,6 @@ import 'package:url_launcher/url_launcher.dart';
 import '../styles.dart';
 
 class BusinessCardScreen extends StatelessWidget {
-  //final String title;
 
   BusinessCardScreen({Key? key}) : super(key: key);
 
