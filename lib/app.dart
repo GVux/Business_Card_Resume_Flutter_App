@@ -17,30 +17,24 @@ class App extends StatelessWidget {
             primarySwatch:
                 Colors.green), //, scaffoldBackgroundColor: Colors.black12),
         //home: BusinessCardScreen(title: title)
-        home: MainTabController(title: title));
+        home: MainTabController());
   }
 }
 
 class MainTabController extends StatelessWidget {
-  MainTabController({Key? key, required this.title}) : super(key: key);
-
-  final String title;
+  MainTabController({Key? key}) : super(key: key);
 
   static const tabs = [
-    Tab(text: 'Business Card'),
-    Tab(text: 'Resume'),
-    Tab(text: 'Predictor')
+    Tab(icon: Icon(Icons.card_travel)),
+    Tab(icon: Icon(Icons.notes)),
+    Tab(icon: Icon(Icons.quiz_rounded))
   ];
 
-  final screens = [
-    BusinessCardScreen(title: "Call Meee Maybe??"),
-    Resume(),
-    Predictor()
-  ];
+  final screens = [BusinessCardScreen(), Resume(), Predictor()];
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-        length: 3,
+        length: tabs.length,
         initialIndex: 0,
         child: Scaffold(
             appBar: AppBar(

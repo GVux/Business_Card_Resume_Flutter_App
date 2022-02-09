@@ -4,9 +4,9 @@ import 'package:url_launcher/url_launcher.dart';
 import 'styles.dart';
 
 class BusinessCardScreen extends StatelessWidget {
-  final String title;
+  //final String title;
 
-  BusinessCardScreen({Key? key, required this.title}) : super(key: key);
+  BusinessCardScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
