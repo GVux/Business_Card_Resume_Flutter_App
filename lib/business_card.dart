@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-//import 'components/centered_placeholder.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'styles.dart';
 
@@ -11,8 +10,6 @@ class BusinessCardScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        //appBar: AppBar(title: Center(child: Text(title))),
-        //body: CenteredPlaceholder(padding: 50));
         body: FractionallySizedBox(
       widthFactor: 0.9,
       heightFactor: 0.9,
