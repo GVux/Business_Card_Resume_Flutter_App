@@ -8,7 +8,7 @@ class EightBall {
 
   final _guesses = [
     'Beats me',
-    'Don\'t hold your breath',
+    'Haha yeah right',
     'Fo sho',
     'Guaranteed',
     'idk bro',

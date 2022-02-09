@@ -14,15 +14,13 @@ class BusinessCardScreen extends StatelessWidget {
       widthFactor: 0.9,
       heightFactor: 0.9,
       child: Padding(
-        padding: const EdgeInsets.all(0),
+        padding: const EdgeInsets.all(20),
         child: Column(mainAxisAlignment: MainAxisAlignment.start, children: [
           picRow(),
           Text(
             'George Vuxton',
             style: TextStyle(
-                fontFamily: 'Michroma',
-                fontSize: 30,
-                color: Colors.blue.shade900),
+                fontFamily: 'Michroma', fontSize: 30, color: Colors.indigo),
           ),
           Text('Software Extraordinaire', style: Styles.smallText),
           Text('Phone # HERE', style: Styles.smallText),

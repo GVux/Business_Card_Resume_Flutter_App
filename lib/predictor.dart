@@ -37,7 +37,11 @@ class _PredictorState extends State<Predictor> {
                 child: Text('Ask a question... tap for the answer.',
                     style: Styles.smallText),
               )),
-          Text('${eightBall.currentGuess}', style: Styles.largeText)
+          Text(
+            '${eightBall.currentGuess}',
+            style: TextStyle(
+                fontFamily: 'Michroma', fontSize: 30, color: Colors.indigo),
+          )
         ]),
       ),
     ));

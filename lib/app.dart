@@ -14,8 +14,7 @@ class App extends StatelessWidget {
     return MaterialApp(
         title: title,
         theme: ThemeData(
-            primarySwatch:
-                Colors.green), //, scaffoldBackgroundColor: Colors.black12),
+            primarySwatch: Colors.indigo, scaffoldBackgroundColor: Colors.grey),
         //home: BusinessCardScreen(title: title)
         home: MainTabController());
   }
