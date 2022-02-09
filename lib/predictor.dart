@@ -2,6 +2,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:project3/styles.dart';
 import '../models/eightball.dart';
+import 'styles.dart';
 
 class Predictor extends StatefulWidget {
   const Predictor({Key? key}) : super(key: key);
@@ -23,15 +24,19 @@ class _PredictorState extends State<Predictor> {
       heightFactor: 0.9,
       child: Padding(
         padding: const EdgeInsets.all(0),
-        child: Column(mainAxisAlignment: MainAxisAlignment.start, children: [
-          Text('Call Me... Maybe?'),
+        child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+          Text('Call Me... Maybe?', style: Styles.largeText),
           GestureDetector(
               onTap: () {
                 setState(() {
                   eightBall.selectedOption();
                 });
               },
-              child: Text('Ask a question... tap for the answer')),
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Text('Ask a question... tap for the answer.',
+                    style: Styles.smallText),
+              )),
           Text('${eightBall.currentGuess}', style: Styles.largeText)
         ]),
       ),

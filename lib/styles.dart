@@ -19,4 +19,10 @@ class Styles {
       fontWeight: FontWeight.w600,
       fontSize: _textSizeLarge,
       color: _textColorBlack);
+
+  static final mediumText = TextStyle(
+      fontFamily: _fontNameDefault,
+      fontWeight: FontWeight.w600,
+      fontSize: _textSizeDefault,
+      color: _textColorBlack);
 }
