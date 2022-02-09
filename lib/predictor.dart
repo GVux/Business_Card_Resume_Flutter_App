@@ -15,21 +15,26 @@ class _PredictorState extends State<Predictor> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Text('${eightBall.currentGuess}', style: Styles.largeText),
-        Padding(
-          padding: EdgeInsets.all(20),
-          child: GestureDetector(
+    return Scaffold(
+        //appBar: AppBar(title: Center(child: Text(title))),
+        //body: CenteredPlaceholder(padding: 50));
+        body: FractionallySizedBox(
+      widthFactor: 0.9,
+      heightFactor: 0.9,
+      child: Padding(
+        padding: const EdgeInsets.all(0),
+        child: Column(mainAxisAlignment: MainAxisAlignment.start, children: [
+          Text('Call Me... Maybe?'),
+          GestureDetector(
               onTap: () {
                 setState(() {
                   eightBall.selectedOption();
                 });
               },
-              child: Text('Press Here')),
-        ),
-      ],
-    );
+              child: Text('Ask a question... tap for the answer')),
+          Text('${eightBall.currentGuess}', style: Styles.largeText)
+        ]),
+      ),
+    ));
   }
 }
