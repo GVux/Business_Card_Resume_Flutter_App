@@ -13,4 +13,10 @@ class Styles {
       fontWeight: FontWeight.w600,
       fontSize: _textSizeSmall,
       color: _textColorBlack);
+
+  static final largeText = TextStyle(
+      fontFamily: _fontNameDefault,
+      fontWeight: FontWeight.w600,
+      fontSize: _textSizeLarge,
+      color: _textColorBlack);
 }
