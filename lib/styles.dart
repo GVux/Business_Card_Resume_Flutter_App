@@ -4,7 +4,7 @@ class Styles {
   static const _textSizeLarge = 30.0;
   static const _textSizeDefault = 20.0;
   static const _textSizeSmall = 15.0;
-  static const _textSizeVerySmall = 12.0;
+  static const _textSizeVerySmall = 14.0;
   static final Color _textColorIndigo = Colors.indigo;
   static final Color _textColorWhite = Colors.white;
   static final Color _textColorBlack = Colors.black;
