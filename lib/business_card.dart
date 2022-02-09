@@ -28,7 +28,11 @@ class MainScreen extends StatelessWidget {
     return Row(mainAxisAlignment: MainAxisAlignment.center, children: [
       Padding(
           padding: EdgeInsets.all(20),
-          child: SizedBox(child: Placeholder(), width: 70, height: 70))
+          child: SizedBox(
+              //child: Image.asset('assets/avataravatar.jpg'),
+              child: Placeholder(),
+              width: 70,
+              height: 70))
     ]);
   }
 
@@ -36,7 +40,7 @@ class MainScreen extends StatelessWidget {
     return Row(mainAxisAlignment: MainAxisAlignment.center, children: [
       Padding(
         padding: EdgeInsets.all(5),
-        child: Text('LinkedIn Profile'),
+        child: Text('LinkedIndddddd Profile'),
       ),
       Padding(
         padding: EdgeInsets.all(5),
