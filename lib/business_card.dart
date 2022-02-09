@@ -23,7 +23,12 @@ class BusinessCardScreen extends StatelessWidget {
                 fontFamily: 'Michroma', fontSize: 30, color: Colors.indigo),
           ),
           Text('Software Extraordinaire', style: Styles.smallText),
-          Text('Phone # HERE', style: Styles.smallText),
+          GestureDetector(
+              onTap: () => launch('sms:8502747841'),
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Text('850-274-7841', style: Styles.smallText),
+              )),
           linkedInEmailRow()
         ]),
       ),
@@ -44,12 +49,16 @@ class BusinessCardScreen extends StatelessWidget {
   Widget linkedInEmailRow() {
     return Row(mainAxisAlignment: MainAxisAlignment.center, children: [
       Padding(
-        padding: EdgeInsets.all(5),
-        child: Text('LinkedIn Profile'),
+        padding: EdgeInsets.all(7),
+        child: GestureDetector(
+            onTap: () => launch('https://linkedin.com/in/georgevuxton'),
+            child: Text('LinkedIn', style: Styles.smallText)),
       ),
       Padding(
-        padding: EdgeInsets.all(5),
-        child: Text('email'),
+        padding: EdgeInsets.all(7),
+        child: GestureDetector(
+            onTap: () => launch('mailto:george.vuxton@gmail.com'),
+            child: Text('email', style: Styles.smallText)),
       )
     ]);
   }
