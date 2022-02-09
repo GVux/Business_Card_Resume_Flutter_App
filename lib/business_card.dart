@@ -1,34 +1,38 @@
 import 'package:flutter/material.dart';
-import 'components/centered_placeholder.dart';
+//import 'components/centered_placeholder.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'styles.dart';
 
-class MainScreen extends StatelessWidget {
+class BusinessCardScreen extends StatelessWidget {
   final String title;
 
-  MainScreen({Key? key, required this.title}) : super(key: key);
+  BusinessCardScreen({Key? key, required this.title}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: Center(child: Text(title))),
+        //appBar: AppBar(title: Center(child: Text(title))),
         //body: CenteredPlaceholder(padding: 50));
-        body: Padding(
-          padding: const EdgeInsets.all(30),
-          child: Column(mainAxisAlignment: MainAxisAlignment.start, children: [
-            picRow(),
-            Text(
-              'George Vuxton',
-              style: TextStyle(
-                  fontFamily: 'Michroma',
-                  fontSize: 30,
-                  color: Colors.blue.shade900),
-            ),
-            Text('Software Extraordinaire', style: Styles.smallText),
-            Text('Phone # HERE', style: Styles.smallText),
-            linkedInEmailRow()
-          ]),
-        ));
+        body: FractionallySizedBox(
+      widthFactor: 0.9,
+      heightFactor: 0.9,
+      child: Padding(
+        padding: const EdgeInsets.all(0),
+        child: Column(mainAxisAlignment: MainAxisAlignment.start, children: [
+          picRow(),
+          Text(
+            'George Vuxton',
+            style: TextStyle(
+                fontFamily: 'Michroma',
+                fontSize: 30,
+                color: Colors.blue.shade900),
+          ),
+          Text('Software Extraordinaire', style: Styles.smallText),
+          Text('Phone # HERE', style: Styles.smallText),
+          linkedInEmailRow()
+        ]),
+      ),
+    ));
   }
 
   Widget picRow() {
