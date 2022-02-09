@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'styles.dart';
+import '../styles.dart';
 
 class BusinessCardScreen extends StatelessWidget {
   //final String title;
@@ -51,8 +51,8 @@ class BusinessCardScreen extends StatelessWidget {
       Padding(
         padding: EdgeInsets.all(5),
         child: GestureDetector(
-            onTap: () => launch('https://linkedin.com/in/georgevuxton'),
-            child: Text('LinkedIn', style: Styles.verySmallText)),
+            onTap: () => launch('https://github.com/GVux'),
+            child: Text('github.com/GVux', style: Styles.verySmallText)),
       ),
       Padding(
         padding: EdgeInsets.all(5),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'styles.dart';
+import '../styles.dart';
 
 class Resume extends StatelessWidget {
   const Resume({Key? key}) : super(key: key);

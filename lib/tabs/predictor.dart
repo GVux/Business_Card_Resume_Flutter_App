@@ -2,7 +2,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:project3/styles.dart';
 import '../models/eightball.dart';
-import 'styles.dart';
+import '../styles.dart';
 
 class Predictor extends StatefulWidget {
   const Predictor({Key? key}) : super(key: key);

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'business_card.dart';
-import 'resume.dart';
-import 'predictor.dart';
+import 'tabs/business_card.dart';
+import 'tabs/resume.dart';
+import 'tabs/predictor.dart';
 
 class App extends StatelessWidget {
   const App({Key? key, required this.title}) : super(key: key);
