@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'components/centered_placeholder.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'styles.dart';
 
 class MainScreen extends StatelessWidget {
   final String title;
@@ -16,9 +17,15 @@ class MainScreen extends StatelessWidget {
           padding: const EdgeInsets.all(30),
           child: Column(mainAxisAlignment: MainAxisAlignment.start, children: [
             picRow(),
-            Text('George Vuxton'),
-            Text('Baller Extraordinaire'),
-            Text('Phone NUMBER HERE'),
+            Text(
+              'George Vuxton',
+              style: TextStyle(
+                  fontFamily: 'Michroma',
+                  fontSize: 30,
+                  color: Colors.blue.shade900),
+            ),
+            Text('Software Extraordinaire', style: Styles.smallText),
+            Text('Phone # HERE', style: Styles.smallText),
             linkedInEmailRow()
           ]),
         ));
@@ -29,8 +36,7 @@ class MainScreen extends StatelessWidget {
       Padding(
           padding: EdgeInsets.all(20),
           child: SizedBox(
-              //child: Image.asset('assets/avataravatar.jpg'),
-              child: Placeholder(),
+              child: Image.asset('assets/images/avataravatar.jpg'),
               width: 70,
               height: 70))
     ]);
@@ -40,7 +46,7 @@ class MainScreen extends StatelessWidget {
     return Row(mainAxisAlignment: MainAxisAlignment.center, children: [
       Padding(
         padding: EdgeInsets.all(5),
-        child: Text('LinkedIndddddd Profile'),
+        child: Text('LinkedIn Profile'),
       ),
       Padding(
         padding: EdgeInsets.all(5),
