@@ -1,3 +1,5 @@
+// CS 492 Project 3
+
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:project3/styles.dart';

@@ -1,3 +1,5 @@
+// CS 492 Project 3
+
 import 'package:flutter/material.dart';
 
 class Styles {

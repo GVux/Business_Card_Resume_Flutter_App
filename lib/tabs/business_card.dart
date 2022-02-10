@@ -1,9 +1,10 @@
+// CS 492 Project 3
+
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../styles.dart';
 
 class BusinessCardScreen extends StatelessWidget {
-
   BusinessCardScreen({Key? key}) : super(key: key);
 
   @override
